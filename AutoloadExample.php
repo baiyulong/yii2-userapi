@@ -1,6 +1,6 @@
 <?php
 
-namespace yii\userapi;
+namespace uapi\userapi;
 
 /**
  * This is just an example.

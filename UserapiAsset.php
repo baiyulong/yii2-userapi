@@ -1,6 +1,6 @@
 <?php
 
-namespace yii\userapi;
+namespace uapi\userapi;
 
 use Yii;
 use yii\web\AssetBundle;

@@ -1,15 +1,14 @@
 <?php
 
-namespace yii\userapi;
+namespace uapi\userapi;
 
 use Yii;
-use yii\base\Module;
 
-class Module extends Module
+class Module extends \yii\base\Module
 {
     public $defaultRoute = 'auth';
 
-    public $mainLayout = '@yii/userapi/views/layouts/main.php';
+    public $mainLayout = '@uapi/userapi/views/layouts/main.php';
 
     public function init()
     {

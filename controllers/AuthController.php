@@ -1,6 +1,6 @@
 <?php
 
-namespace yii\userapi;
+namespace uapi\userapi\controller;
 
 use Yii;
 use yii\web\Controller;
