@@ -1,5 +1,5 @@
 {
-    "name": "vendor/yii2-userapi",
+    "name": "baiyulong/yii2-userapi",
     "description": "用于Dratio的用户中心系统注册、登录相关",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
