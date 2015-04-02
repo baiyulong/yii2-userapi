@@ -1,0 +1,21 @@
+{
+    "name": "vendor/yii2-userapi",
+    "description": "用于Dratio的用户中心系统注册、登录相关",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "baiyulong",
+            "email": "baiyulong2009@hotmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yii\\userapi\\": ""
+        }
+    }
+}
