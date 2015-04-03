@@ -48,6 +48,11 @@ php composer.phar require --prefer-dist baiyulong/yii2-userapi "*"
 ```
 现在你可以在你的浏览器使用
 http://domain/uapi
+
+关于组件所有URL：
+http://domain/uapi/auth/login  登录
+http://domain/uapi/auth/logout 退出
+
 是不是看到登录界面了？
 
 ----------------------------------------------------------------------------
