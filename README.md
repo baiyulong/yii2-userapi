@@ -24,6 +24,7 @@ php composer.phar require --prefer-dist baiyulong/yii2-userapi "*"
 
 在你的项目配置文件里添加如下配置
 
+```
 'modules' => [
     'uapi' => [
         'class' => 'uapi\userapi\Module',
@@ -44,7 +45,7 @@ php composer.phar require --prefer-dist baiyulong/yii2-userapi "*"
         'loginUrl' => '/uapi/auth/login', //登录URL地址
     ],
 ],
-
+```
 现在你可以在你的浏览器使用
 http://domain/uapi
 是不是看到登录界面了？
@@ -52,6 +53,7 @@ http://domain/uapi
 ----------------------------------------------------------------------------
 
 关于组件，安装成功之后在vendor目录下你会找到如下：
+```
 ├── vendor
 │   ├── baiyulong  	//这里是组件的全部内容
 │   │   └── yii2-userapi
@@ -81,3 +83,4 @@ http://domain/uapi
 │   │           │   └── login.php
 │   │           └── layouts
 │   │               └── main.php
+```
