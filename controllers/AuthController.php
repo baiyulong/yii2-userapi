@@ -3,23 +3,36 @@
 namespace uapi\userapi\controllers;
 
 use Yii;
-use yii\web\Controller;
+use uapi\userapi\models;
 
-class AuthController extends Controller
+class AuthController extends BaseController
 {
 	public function actionSignup()
 	{
-		print_r(Yii::$app->getParams());exit;
 		echo 'This is signup action';
 	}
 
 	public function actionLogin()
 	{
-		echo 'This is login action';
+		try {
+			if (!Yii::$app->user->isGuest) {
+				return $this->redirect('site/index');
+			}
+
+			$model = new models\LoginForm();
+			if ($model->load(Yii::$app->request->post()) && $model->login()) {
+				return $this->redirect('/site/index');
+			} else {
+				return $this->render('login', ['model' => $model]);
+			}
+		} catch (Exception $e) {
+			$this->_showException($e);
+		}
 	}
 
 	public function actionLogout()
 	{
-		echo 'This is logout action';
+		Yii::$app->user->logout();
+    	return $this->goHome();
 	}
 }
