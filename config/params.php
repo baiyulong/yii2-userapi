@@ -4,8 +4,8 @@ return [
 	'apiDebug' => true,
 	'requestAuth' => [
 		'header' => [
-			'AUTHUSER' => 'dratio',
-			'AUTHPW'   => 'gWrdx4T7tV3G',
+			'AUTHUSER' => 'test',
+			'AUTHPW'   => 'test',
 		],
 	],
 	'notNeedLoginAction' => [

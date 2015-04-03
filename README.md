@@ -1,5 +1,8 @@
 UserCenterRemoteApi
 ===================
+
+注意:本扩展是针对特定对象(公司)使用的,别人用不了
+
 用于Dratio的用户中心系统注册、登录相关
 
 安装
@@ -10,13 +13,13 @@ UserCenterRemoteApi
 运行
 
 ```
-php composer.phar require --prefer-dist baiyulong/yii2-userapi "*"
+php composer.phar require --prefer-dist baiyulong/yii2-userapi "dev-master"
 ```
 
 或者
 
 ```
-"baiyulong/yii2-userapi": "*"
+"baiyulong/yii2-userapi": "dev-master"
 ```
 
 使用
@@ -47,10 +50,13 @@ php composer.phar require --prefer-dist baiyulong/yii2-userapi "*"
 ],
 ```
 现在你可以在你的浏览器使用
+
 http://domain/uapi
 
 关于组件所有URL：
+
 http://domain/uapi/auth/login  登录
+
 http://domain/uapi/auth/logout 退出
 
 是不是看到登录界面了？
